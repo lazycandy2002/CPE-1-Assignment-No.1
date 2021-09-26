@@ -301,15 +301,19 @@ Scanner scan = new Scanner(System.in);
 c = scan.next();
 switch (c){
 case "1":
-int i,i1;
-System.out.print("Print all odd number until:\n");
-i1=scan.nextInt();
-System.out.print("Odd number from 1 to "+i1+" are: \n");
-for(i=1; i<=num; i++){
-if(i%2==1)
-System.out.print(i+"\n");}
+int r,i;
+System.out.print("Enter the first number for the starting range: ");
+int num1=scan.nextInt();
+System.out.print("Enter the second number for end range: ");
+int num2=scan.nextInt();
+System.out.println("Display the odd numbers between "+num1+" and "+num2+" are :");
+for(i=num1; i<=num2; i++){ 
+r=i%2; 
+if(r==1) 
+System.out.println(i);}
 System.out.println("-------------------N ODD NUMBERS---------------------------");
 PRINTODDNUMBER1();break;
+
 case "2":
 menu();start();break;
 case "3":
