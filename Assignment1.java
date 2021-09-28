@@ -1,25 +1,23 @@
 
-package assignment.pkg1;
-import static assignment.pkg1.Assignment1.e;
+package assignment.no1;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Assignment1 {
+public class Assignmentno1 {
 public static String z,a,b,c,d,e,f,g;
-public static Scanner input = new Scanner(System.in);
+public static Scanner scan = new Scanner(System.in);
 public static int num;
 
-    public static void main(String[] args) throws IOException {
+public static void main(String[] args) throws IOException {
  System.out.println("                   JARED GAMUTIN - CPE 1");
  System.out.println("                     Assingment - 1");
  menu();
- start ();
-    }
+ start ();}
     
 static void menu (){
- System.out.println("----------------------------------------------------------");
+ System.out.println("---------------------------------------------------------");
  System.out.println("                    =================");
  System.out.println("                     MODE SELECTION");
  System.out.println("                    =================");
@@ -33,7 +31,9 @@ static void menu (){
  System.out.println("ENTER A NUMBER MODE BASE ON THE GIVEN SELECTION");}
 
  static void start() throws IOException{
-a = input.next(); 
+ Scanner input = new Scanner (System.in); 
+     a = input.next();
+
         
 switch (a) {
             
@@ -80,12 +80,12 @@ System.out.println("----------------------------------------------------------")
 ODDOREVEN1();}
 
 static void ODDOREVEN1() throws IOException{
-System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");
-Scanner scan = new Scanner(System.in);    
+System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");   
 b = scan.next();
 switch (b){
 case "1":
     System.out.println("Enter an Integer number:");
+Scanner input = new Scanner (System.in); 
     num = input.nextInt();
     if ( num % 2 == 0 )
         System.out.println("Entered number is even");
@@ -109,8 +109,7 @@ System.out.println("----------------------------------------------------------")
 FACTORIAL1();}
 
 static void FACTORIAL1 () throws IOException{
-System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");
-Scanner scan = new Scanner(System.in);    
+System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");    
 c = scan.next();
 switch (c){
 case "1":
@@ -141,8 +140,7 @@ System.out.println("----------------------------------------------------------")
 TEMPCONVERTER1();}
 
 static void TEMPCONVERTER1 () throws IOException{
-System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");
-Scanner scan = new Scanner(System.in);    
+System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");   
 d = scan.next();
 switch (d){
 case "1":
@@ -160,11 +158,10 @@ static void TEMPSTART () throws IOException{
 System.out.println("ENTER A NUMBER MODE TO START.. ");
 System.out.println("1. °C to °F"+ "    2.°F to °C"+ "    3. °C to K");
 System.out.println("4.  K to °C"+ "    5.°F to K"+ "     6.  K to °F");
-System.out.println("7.BACK TO METHOD SELECION");
-Scanner scan = new Scanner(System.in);    
+System.out.println("7.BACK TO METHOD SELECION");   
 e =scan.next();
 switch (e){
-    case "1": CTOF ();break;
+    case "1": CTOF();break;
     case "2": FTOC();break;
     case "3": CTOK();break;
     case "4": KTOC();break;
@@ -179,8 +176,7 @@ System.out.print("Please enter temperature in Celsius : ");
     double fahrenheit = (9.0/5.0)*celsius + 32;
 System.out.println("Temperature in Fahrenheit is : "+fahrenheit);
 System.out.println("-----------------------°C to °F---------------------------");    
-System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");
- Scanner scan = new Scanner(System.in);    
+System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");    
 f =scan.next();
 switch (f){
     case "1":CTOF ();break;
@@ -189,12 +185,12 @@ switch (f){
 
 static void FTOC () throws IOException{
 System.out.print("Input a degree in Fahrenheit: ");
+Scanner input = new Scanner (System.in); 
 float fahrenheit = (float) input.nextDouble();
 float  celsius =(float) (( 5 *(fahrenheit - 32.0)) / 9.0);
 System.out.println(fahrenheit + " degree Fahrenheit is equal to " + celsius + " in Celsius");
 System.out.println("-----------------------°F TO °C---------------------------");
-System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");
- Scanner scan = new Scanner(System.in);    
+System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");   
 g =scan.next();
 switch (g){
     case "1":FTOC ();break;
@@ -209,8 +205,7 @@ float celsius = Float.parseFloat(br.readLine());
 float kelvin = celsius + 273.15F;
 System.out.println("Kelvin: "+ kelvin);
 System.out.println("-----------------------°C TO K----------------------------");
-System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");
- Scanner scan = new Scanner(System.in);    
+System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");    
 g =scan.next();
 switch (g){
     case "1":CTOK ();break;
@@ -225,8 +220,7 @@ kelvin = Double.parseDouble ( br.readLine() );
 celsius = kelvin - 273.0;
 System.out.println ("\n" + kelvin + "K = "+ celsius + "C");    
 System.out.println("-----------------------K TO °C----------------------------");
-System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");
- Scanner scan = new Scanner(System.in);    
+System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");    
 g =scan.next();
 switch (g){
     case "1":KTOC ();break;
@@ -235,12 +229,12 @@ switch (g){
 
 static void FTOK() throws IOException{
 System.out.print("Input a degree in Fahrenheit: ");
+Scanner input = new Scanner (System.in); 
 float fahrenheit = (float) input.nextDouble();
 float kelvin =  (float) (5/9 * (fahrenheit - 32) + 273.15);
 System.out.println(fahrenheit + " degree Fahrenheit is equal to " + kelvin + " in kelvin");
 System.out.println("-----------------------°F TO K----------------------------");
-System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");
- Scanner scan = new Scanner(System.in);    
+System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");   
 g =scan.next();
 switch (g){
     case "1":FTOK ();break;
@@ -249,12 +243,12 @@ switch (g){
 
 static void KTOF () throws IOException{
 System.out.print("Input a Kelvin to convert Fahrenheit: ");
+Scanner input = new Scanner (System.in); 
 float kelvin = (float) input.nextDouble();
 float fahrenheit =  (float) (9/5 * (kelvin - 273.15) + 32);
 System.out.println(kelvin + " Kelvin is equal to " + fahrenheit+ "°F");
 System.out.println("-----------------------°F TO K----------------------------");
-System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");
- Scanner scan = new Scanner(System.in);    
+System.out.println("1.SOLVE AGAIN?-------2.BACK TO NUMBER MODE----------3.EXIT");    
 g =scan.next();
 switch (g){
     case "1":KTOF ();break;
@@ -268,8 +262,7 @@ System.out.println("----------------------------------------------------------")
 volumeofsphere1();}
 
 static void volumeofsphere1() throws IOException {
-System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");
-Scanner scan = new Scanner(System.in);    
+System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT"); 
 b = scan.next();
 switch (b){
 case "1":
@@ -296,8 +289,7 @@ System.out.println("----------------------------------------------------------")
 PRINTODDNUMBER1();}
 
 static void PRINTODDNUMBER1 () throws IOException{
-System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");
-Scanner scan = new Scanner(System.in);    
+System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");    
 c = scan.next();
 switch (c){
 case "1":
@@ -313,7 +305,6 @@ if(r==1)
 System.out.println(i);}
 System.out.println("-------------------N ODD NUMBERS---------------------------");
 PRINTODDNUMBER1();break;
-
 case "2":
 menu();start();break;
 case "3":
