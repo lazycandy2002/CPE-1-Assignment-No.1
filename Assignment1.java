@@ -93,7 +93,7 @@ System.out.println("----------------------------------------------------------")
 System.out.println("                     FACTORIAL");
 System.out.println("----------------------------------------------------------");
 FACTORIAL1();}
-static void FACTORIAL1 () throws IOException{
+public static double FACTORIAL1 () throws IOException{
 System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");    
 c = scan.next();
 switch (c){
@@ -114,7 +114,8 @@ menu();start();break;
 case "3":
 EXIT ();break;
 default: 
-default1 ();FACTORIAL1 (); break;}}
+default1 ();FACTORIAL1 (); break;}return 0;
+}
 static void TEMPCONVERTER () throws IOException{
 System.out.println("----------------------------------------------------------");
 System.out.println("                  TEMPERATURE CONVERTER");
@@ -146,7 +147,7 @@ switch (e){
     case "5": FTOK();break;
     case "6": KTOF();break;
     case "7": menu();start();break;}}
-static void CTOF () throws IOException{
+static double CTOF () throws IOException{
 BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 System.out.print("Please enter temperature in Celsius : ");
     double celsius = Double.parseDouble(reader.readLine());
@@ -158,8 +159,8 @@ f =scan.next();
 switch (f){
     case "1":CTOF ();break;
     case "2":TEMPSTART ();break;
-    case "3":EXIT ();break;}}
-static void FTOC () throws IOException{
+    case "3":EXIT ();break;}return 0;}
+static double FTOC () throws IOException{
 System.out.print("Input a degree in Fahrenheit: ");
 Scanner input = new Scanner (System.in); 
 float fahrenheit = (float) input.nextDouble();
@@ -171,8 +172,8 @@ g =scan.next();
 switch (g){
     case "1":FTOC ();break;
     case "2":TEMPSTART ();break;
-    case "3":EXIT ();break;}}
-static void CTOK () throws IOException{
+    case "3":EXIT ();break;}return 0;}
+static double CTOK () throws IOException{
 BufferedReader br;
 System.out.println("Temperature in Degree Celsius:");		
 br = new BufferedReader(new InputStreamReader(System.in));
@@ -185,8 +186,8 @@ g =scan.next();
 switch (g){
     case "1":CTOK ();break;
     case "2":TEMPSTART ();break;
-    case "3":EXIT ();break;}} 
-static void KTOC() throws IOException{
+    case "3":EXIT ();break;}return 0;} 
+static double KTOC() throws IOException{
 double celsius,kelvin;
 BufferedReader br = new BufferedReader ( new InputStreamReader (System.in) );
 System.out.println ("Enter temperature in Kelvin");
@@ -199,8 +200,8 @@ g =scan.next();
 switch (g){
     case "1":KTOC ();break;
     case "2":TEMPSTART ();break;
-    case "3":EXIT ();break;}}
-static void FTOK() throws IOException{
+    case "3":EXIT ();break;}return 0;}
+static double FTOK() throws IOException{
 System.out.print("Input a degree in Fahrenheit: ");
 Scanner input = new Scanner (System.in); 
 float fahrenheit = (float) input.nextDouble();
@@ -212,8 +213,8 @@ g =scan.next();
 switch (g){
     case "1":FTOK ();break;
     case "2":TEMPSTART ();break;
-    case "3":EXIT ();break;}}
-static void KTOF () throws IOException{
+    case "3":EXIT ();break;}return 0;}
+static double KTOF () throws IOException{
 System.out.print("Input a Kelvin to convert Fahrenheit: ");
 Scanner input = new Scanner (System.in); 
 float kelvin = (float) input.nextDouble();
@@ -225,13 +226,13 @@ g =scan.next();
 switch (g){
     case "1":KTOF ();break;
     case "2":TEMPSTART ();break;
-    case "3":EXIT ();break;}}
+    case "3":EXIT ();break;}return 0;}
 static void volumeofsphere () throws IOException{
 System.out.println("----------------------------------------------------------");
 System.out.println("                   VOLUME OF SPHERE");
 System.out.println("----------------------------------------------------------");
 volumeofsphere1();}
-static void volumeofsphere1() throws IOException {
+static double volumeofsphere1() throws IOException {
 System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT"); 
 b = scan.next();
 switch (b){
@@ -248,13 +249,13 @@ menu();start();break;
 case "3":
 EXIT ();break;
 default: 
-default1 ();volumeofsphere1 (); break;}}
+default1 ();volumeofsphere1 (); break;}return 0;}
 static void PRINTODDNUMBER () throws IOException{
 System.out.println("----------------------------------------------------------");
 System.out.println("                    LIST OF N ODD NUMBERS");
 System.out.println("----------------------------------------------------------");
 PRINTODDNUMBER1();}
-static void PRINTODDNUMBER1 () throws IOException{
+static double PRINTODDNUMBER1 () throws IOException{
 System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");    
 c = scan.next();
 switch (c){
@@ -275,7 +276,7 @@ menu();start();break;
 case "3":
 EXIT ();break;
 default: 
-default1 ();PRINTODDNUMBER1 (); break;}}
+default1 ();PRINTODDNUMBER1 (); break;}return 0;}
 static void default1 (){
 System.out.println("INVALID SELECTION---PLEASE TRY AGAIN");}
 static void EXIT (){
