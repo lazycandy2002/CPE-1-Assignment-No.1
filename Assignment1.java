@@ -12,10 +12,7 @@ public static int num;
 
 public static void main(String[] args) throws IOException {
  System.out.println("                   JARED GAMUTIN - CPE 1");
- System.out.println("                     Assingment - 1");
- menu();
- start ();}
-    
+ System.out.println("                     Assingment - 1");menu();start ();}
 static void menu (){
  System.out.println("---------------------------------------------------------");
  System.out.println("                    =================");
@@ -27,16 +24,11 @@ static void menu (){
  System.out.println("                     4.VOLUME-SPHERE");
  System.out.println("                     5.PRINT ODD NUMBERS");
  System.out.println("                     6.EXIT");
- 
  System.out.println("ENTER A NUMBER MODE BASE ON THE GIVEN SELECTION");}
-
  static void start() throws IOException{
  Scanner input = new Scanner (System.in); 
-     a = input.next();
-
-        
-switch (a) {
-            
+     a = input.next();       
+switch (a) {          
 case "1":
     z = "ODD OR EVEN";
     System.out.println(z+" SELECTED..");
@@ -68,17 +60,12 @@ case "6":
      EXIT ();
      break;
 default: 
-System.out.println("INVALID SELECTION");
-System.out.println ("PLEASE TRY AGAIN");
-start ();
-break;}}
-  
+default1 ();start ();break;}}
 static void ODDOREVEN () throws IOException{
 System.out.println("----------------------------------------------------------");
 System.out.println("                   ODD OR EVEN");
 System.out.println("----------------------------------------------------------");
 ODDOREVEN1();}
-
 static void ODDOREVEN1() throws IOException{
 System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");   
 b = scan.next();
@@ -88,9 +75,9 @@ case "1":
 Scanner input = new Scanner (System.in); 
     num = input.nextInt();
     if ( num % 2 == 0 )
-        System.out.println("Entered number is even");
+        System.out.println("The number that you have entered is even");
      else
-        System.out.println("Entered number is odd");
+        System.out.println("The number that you have entered is odd");
 System.out.println("-------------------ODD-OR-EVEN----------------------------");
     ODDOREVEN1(); break;
 case "2":
@@ -101,13 +88,11 @@ default:
 System.out.println("INVALID SELECTION");
 System.out.println ("PLEASE TRY AGAIN");
 ODDOREVEN1 (); break;}}
-
 static void FACTORIAL () throws IOException{
 System.out.println("----------------------------------------------------------");
 System.out.println("                     FACTORIAL");
 System.out.println("----------------------------------------------------------");
 FACTORIAL1();}
-
 static void FACTORIAL1 () throws IOException{
 System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");    
 c = scan.next();
@@ -129,16 +114,12 @@ menu();start();break;
 case "3":
 EXIT ();break;
 default: 
-System.out.println("INVALID SELECTION");
-System.out.println ("PLEASE TRY AGAIN");
-FACTORIAL1 (); break;}}
-
+default1 ();FACTORIAL1 (); break;}}
 static void TEMPCONVERTER () throws IOException{
 System.out.println("----------------------------------------------------------");
 System.out.println("                  TEMPERATURE CONVERTER");
 System.out.println("----------------------------------------------------------");
 TEMPCONVERTER1();}
-
 static void TEMPCONVERTER1 () throws IOException{
 System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");   
 d = scan.next();
@@ -150,10 +131,7 @@ menu();start();break;
 case "3":
 EXIT ();break;
 default: 
-System.out.println("INVALID SELECTION");
-System.out.println ("PLEASE TRY AGAIN");
-TEMPCONVERTER1(); break;}}
-
+default1 ();TEMPCONVERTER1(); break;}}
 static void TEMPSTART () throws IOException{
 System.out.println("ENTER A NUMBER MODE TO START.. ");
 System.out.println("1. °C to °F"+ "    2.°F to °C"+ "    3. °C to K");
@@ -168,7 +146,6 @@ switch (e){
     case "5": FTOK();break;
     case "6": KTOF();break;
     case "7": menu();start();break;}}
-
 static void CTOF () throws IOException{
 BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 System.out.print("Please enter temperature in Celsius : ");
@@ -182,7 +159,6 @@ switch (f){
     case "1":CTOF ();break;
     case "2":TEMPSTART ();break;
     case "3":EXIT ();break;}}
-
 static void FTOC () throws IOException{
 System.out.print("Input a degree in Fahrenheit: ");
 Scanner input = new Scanner (System.in); 
@@ -196,7 +172,6 @@ switch (g){
     case "1":FTOC ();break;
     case "2":TEMPSTART ();break;
     case "3":EXIT ();break;}}
-
 static void CTOK () throws IOException{
 BufferedReader br;
 System.out.println("Temperature in Degree Celsius:");		
@@ -211,7 +186,6 @@ switch (g){
     case "1":CTOK ();break;
     case "2":TEMPSTART ();break;
     case "3":EXIT ();break;}} 
-
 static void KTOC() throws IOException{
 double celsius,kelvin;
 BufferedReader br = new BufferedReader ( new InputStreamReader (System.in) );
@@ -226,7 +200,6 @@ switch (g){
     case "1":KTOC ();break;
     case "2":TEMPSTART ();break;
     case "3":EXIT ();break;}}
-
 static void FTOK() throws IOException{
 System.out.print("Input a degree in Fahrenheit: ");
 Scanner input = new Scanner (System.in); 
@@ -240,7 +213,6 @@ switch (g){
     case "1":FTOK ();break;
     case "2":TEMPSTART ();break;
     case "3":EXIT ();break;}}
-
 static void KTOF () throws IOException{
 System.out.print("Input a Kelvin to convert Fahrenheit: ");
 Scanner input = new Scanner (System.in); 
@@ -254,13 +226,11 @@ switch (g){
     case "1":KTOF ();break;
     case "2":TEMPSTART ();break;
     case "3":EXIT ();break;}}
-
 static void volumeofsphere () throws IOException{
 System.out.println("----------------------------------------------------------");
 System.out.println("                   VOLUME OF SPHERE");
 System.out.println("----------------------------------------------------------");
 volumeofsphere1();}
-
 static void volumeofsphere1() throws IOException {
 System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT"); 
 b = scan.next();
@@ -269,7 +239,7 @@ case "1":
 Scanner s= new Scanner(System.in);
 System.out.println("Enter the radius of sphere:");
 double r=s.nextDouble();
-double  volume= (4*22*r*r*r)/(3*7);
+double  volume= (Math.PI * 4 * (r*r*r))/3;
 System.out.println("Volume is:" +volume);
 System.out.println("-------------------VOLUME OF SPHERE-----------------------");
 volumeofsphere1 ();break;
@@ -278,16 +248,12 @@ menu();start();break;
 case "3":
 EXIT ();break;
 default: 
-System.out.println("INVALID SELECTION");
-System.out.println ("PLEASE TRY AGAIN");
-volumeofsphere1 (); break;}}
-
+default1 ();volumeofsphere1 (); break;}}
 static void PRINTODDNUMBER () throws IOException{
 System.out.println("----------------------------------------------------------");
 System.out.println("                    LIST OF N ODD NUMBERS");
 System.out.println("----------------------------------------------------------");
 PRINTODDNUMBER1();}
-
 static void PRINTODDNUMBER1 () throws IOException{
 System.out.println("1.START-----2.BACK TO METHOD SELECTION--------3.EXIT");    
 c = scan.next();
@@ -299,8 +265,7 @@ int num1=scan.nextInt();
 System.out.print("Enter the second number for end range: ");
 int num2=scan.nextInt();
 System.out.println("Display the odd numbers between "+num1+" and "+num2+" are :");
-for(i=num1; i<=num2; i++){ 
-r=i%2; 
+for(i=num1; i<=num2; i++){r=i%2; 
 if(r==1) 
 System.out.println(i);}
 System.out.println("-------------------N ODD NUMBERS---------------------------");
@@ -310,13 +275,10 @@ menu();start();break;
 case "3":
 EXIT ();break;
 default: 
-System.out.println("INVALID SELECTION");
-System.out.println ("PLEASE TRY AGAIN");
-PRINTODDNUMBER1 (); break;}}
-
+default1 ();PRINTODDNUMBER1 (); break;}}
+static void default1 (){
+System.out.println("INVALID SELECTION---PLEASE TRY AGAIN");}
 static void EXIT (){
 System.out.println("----------------------------------------------------------");
 System.out.println ("------------------THANK YOU - GOOD BYE-------------------");
-System.out.println("----------------------------------------------------------");
-}}
-    
+System.out.println("----------------------------------------------------------");}}
